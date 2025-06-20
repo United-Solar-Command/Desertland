@@ -1,0 +1,16 @@
+SCR_IndestructibleEnvironmentalEntity : "{B94DDC61F0B7F9D7}Prefabs/Rocks/Rock_Base.et" {
+ ID "1133272B892A2239"
+ components {
+  MeshObject "{65A8D957AF35DE92}" {
+   Object "{B574C20032DB4A2D}source/houses/tem_Pillar2_broken.xob"
+   LODFactors {
+    10 5 2 1
+   }
+  }
+  RigidBody "{65A8D957AF35DE8A}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ coords 2678.706 0 3937.706
+}

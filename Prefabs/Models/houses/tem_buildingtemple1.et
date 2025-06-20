@@ -1,0 +1,30 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{1E16B841C66B1937}source/houses/tem_buildingtemple1.xob"
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   Enabled 0
+  }
+  Hierarchy "{50B87EFBB2BAB285}" {
+   Enabled 0
+  }
+ }
+ Flags 525315
+ coords 2172.757 -0.499 1646.311
+ angleY 67.786
+ {
+  EnvironmentProbeEntity : "{565470F7BA530E0D}Prefabs/Structures/Core/ProbeHouse_Base.et" {
+   ID "65A8D951355C09AD"
+   coords 0 0 0
+   NearPlane 5
+   DiffuseColor 0.451 0.451 0.451 1
+   TopColorEV 0.66
+   TopAngleMax -55.28
+   TopAngleMin -62.59
+   TopAngleLerp 1
+   BottomColor 0.413 0.223 0.095 1
+  }
+ }
+}

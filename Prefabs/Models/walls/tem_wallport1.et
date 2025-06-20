@@ -1,0 +1,102 @@
+SCR_DestructibleEntity : "{ABE1EFC16D47A8C2}Prefabs/Structures/Core/Wall_MultiPhase_Base.et" {
+ ID "51E2F0F09703F07B"
+ components {
+  MeshObject "{56DE7C8DCD0F4E0A}" {
+   Object "{E53EF95D428BBDBB}source/props/tem_wallport1.xob"
+   Materials {
+    MaterialAssignClass "{65A8D9581215EC02}" {
+     SourceMaterial "MI_Brick_01a"
+     AssignedMaterial "{BB7DC8A437FBF397}source/props/Data/_NNN1.emat"
+    }
+   }
+  }
+  NavmeshCustomLinkComponent "{65A8D9581215EC1A}" {
+   LinkType NavmeshJumpLink "{65A8D9581215EC14}" {
+    "Navmesh setting presets" {
+     NavmeshCustomLinkSetting "{65A8D9581215EC17}" {
+      ProjectPresets {
+       NavmeshCustomLinkPreset "{65A8D9581215EC11}" {
+        ProjectName "Soldiers"
+        AreaType "Walkable"
+       }
+      }
+      BeginPoint -0.116 0 1.138
+      EndPoint -0.098 0 -1.101
+      Radius 0.2
+      QueueDelay 5
+      QueueTimeout 0
+     }
+    }
+   }
+  }
+  NavmeshCustomLinkComponent "{65A8D9581215EC2C}" {
+   LinkType NavmeshJumpLink "{65A8D95812145267}" {
+    "Navmesh setting presets" {
+     NavmeshCustomLinkSetting "{65A8D95812145262}" {
+      ProjectPresets {
+       NavmeshCustomLinkPreset "{65A8D95812145263}" {
+        ProjectName "Soldiers"
+        AreaType "Walkable"
+       }
+      }
+      BeginPoint -0.116 0 1.138
+      EndPoint -0.098 0 -1.101
+      Radius 0.2
+      QueueDelay 5
+      QueueTimeout 0
+     }
+    }
+   }
+  }
+ }
+ placement slopelandcontact
+ MaxHealth 10000
+ "Collision multiplier" 2
+ "Kinetic multiplier" 0.1
+ "Fragmentation multiplier" 2
+ "Explosive multiplier" 5
+ DamageReduction 200
+ DamageThreshold 1
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5A18F297698A2425}" {
+  m_sPhaseModel "{A3B36ECE08C8180A}source/props/tem_wall_L_5m_dst.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_ParticleSpawnable "{65A8D95812145277}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{42E7EB23D64C6DCF}particles/wall_smoke_exp.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D95812145272}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{A5ABAB33334E0973}Particles/Props/Dest_Prop_Concrete_Medium.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D95812145271}" {
+    m_vOffsetPosition 0 1.5 0
+    m_Particle "{8BF4300C0BD96ED7}Particles/Props/Dest_ConcreteWall.ptc"
+    m_bDirectional 0
+   }
+  }
+ }
+ DamagePhases {
+  SCR_BaseDestructionPhase "{65A8D9581214527B}" {
+   Threshold 0.7
+   m_sPhaseModel "{A3B36ECE08C8180A}source/props/tem_wall_L_5m_dst.xob"
+  }
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{5A18F297606BF928}" {
+  m_sPhaseModel "{A3B36ECE08C8180A}source/props/tem_wall_L_5m_dst.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_ParticleSpawnable "{65A8D95812145200}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{42E7EB23D64C6DCF}particles/wall_smoke_exp.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D9581214520E}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{A5ABAB33334E0973}Particles/Props/Dest_Prop_Concrete_Medium.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D9581214520F}" {
+    m_vOffsetPosition 0 1.5 0
+    m_Particle "{8BF4300C0BD96ED7}Particles/Props/Dest_ConcreteWall.ptc"
+    m_bDirectional 0
+   }
+  }
+ }
+}

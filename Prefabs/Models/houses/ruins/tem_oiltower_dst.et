@@ -1,0 +1,12 @@
+StaticModelEntity : "{A7C1BCA45681EB56}Prefabs/Structures/Core/BuildingRuin_base.et" {
+ ID "5CAE9B8BF56E4173"
+ components {
+  MeshObject "{5CAE9B8B9983D35F}" {
+   Object "{ADFF8D9B3AA79A96}source/houses/tem_oiltower_dst.xob"
+   LODFactors {
+    50 30 10 1
+   }
+  }
+ }
+ coords 2676.02 165.627 2431.599
+}

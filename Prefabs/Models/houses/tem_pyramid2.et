@@ -1,0 +1,16 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{C3FF6CA4C55D9C67}source/houses/tem_pyramid2.xob"
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   Enabled 0
+  }
+  Hierarchy "{50B87EFBB2BAB285}" {
+   Enabled 0
+  }
+ }
+ Flags 525315
+ coords 2382.659 -0.002 1203.039
+}

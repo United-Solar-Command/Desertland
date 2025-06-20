@@ -1,0 +1,13 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{E815323D6EFF1ABB}source/props/tem_carbetsbox1.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ModelGeometry 1
+  }
+ }
+ Flags 1027
+ coords 8973.532 125.162 9426.192
+}

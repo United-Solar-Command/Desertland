@@ -1,0 +1,62 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{1E27C529253C67E0}source/houses/tem_security_building1.xob"
+  }
+  NavmeshCustomLinkComponent "{65A8D95BB83CA52D}" {
+   LinkType NavmeshJumpLink "{65A8D95BB83CA521}" {
+    "Navmesh setting presets" {
+     NavmeshCustomLinkSetting "{65A8D95BB83CA523}" {
+      ProjectPresets {
+       NavmeshCustomLinkPreset "{65A8D95BB83CA53C}" {
+        ProjectName "Soldiers"
+        AreaType "Walkable"
+       }
+      }
+      BeginPoint 1.236 0.025 2.582
+      EndPoint 1.17 0.025 1.599
+      Radius 0.2
+      QueueDelay 5
+      QueueTimeout 0
+     }
+    }
+   }
+  }
+  SCR_DestructibleBuildingComponent "{65A8D95BB83CA534}" {
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     HZDefault 1
+     MaxHealth 35000
+     DamageReduction 100
+     DamageThreshold 100
+     "Kinetic multiplier" 0.1
+     "Explosive multiplier" 15
+    }
+   }
+   m_aEffects {
+    SCR_TimedParticle Particle_01_dust_start {
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BB83CA549}" {
+      m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+      m_bAtCenter 0
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 0.2
+    }
+    SCR_TimedPrefab Prefab_Ruins_01 {
+     m_sRuinsPrefab "{0C913EEAD6460C5A}Prefabs/Models/houses/ruins/tem_security_building1_dst.et"
+    }
+    SCR_TimedParticle Particle_Dust_01_Collapse {
+     m_fSpawnTime 0.001
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BB83CA546}" {
+      m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 0.45
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,36 @@
+SCR_IndestructibleEnvironmentalEntity : "{B94DDC61F0B7F9D7}Prefabs/Rocks/Rock_Base.et" {
+ ID "1133272B892A2239"
+ components {
+  MeshObject "{65A8D95BC9363D50}" {
+   Object "{BA2E715523E095E1}source/houses/tem_Pillar1.xob"
+   LODFactors {
+    50 20 10 1
+   }
+  }
+  RigidBody "{65A8D95BC9363D7C}" {
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_LampComponent "{65A8D95BC9363D79}" {
+   m_aLightData {
+    SCR_BaseLightData "{65A8D95BC9363D77}" {
+     m_eLightType POINT
+     m_vLightOffset 0 18 0
+     m_vLightColor 1 0.631 0.212
+     m_fRadius 30
+     m_fIntensityClipEV 5
+     m_fScale 0.15
+    }
+   }
+   m_bGradualLightning 1
+   m_fLV 12
+   m_fDistanceAttenuation 30
+   m_sParticle "{15E55D1F83C5F4EE}Prefabs/Models/particles/torchfire_big.ptc"
+   m_vParticleOffset 0 17 0
+  }
+ }
+ Flags 525315
+ coords 2653.297 -1.887 3937.51
+ angleY 135.277
+ scale 0.34
+}

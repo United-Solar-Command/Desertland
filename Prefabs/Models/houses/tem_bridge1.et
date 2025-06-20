@@ -1,0 +1,20 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{30BFCF6C62D07EDA}source/houses/tem_bridge1.xob"
+  }
+  RoadNetworkBridgeComponent "{65A8D9575FF9FFBC}" {
+   Points {
+    0 0 0 -35.7 0 0
+   }
+   BridgeWidth 8
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   Enabled 0
+  }
+ }
+ Flags 1027
+ coords 1551.281 152 2402.387
+ IsBuilding 1
+}

@@ -1,0 +1,17 @@
+GenericEntity {
+ ID "65A8D95BB61C0FCC"
+ components {
+  MeshObject "{65A8D95BB61C0FC5}" {
+   Object "{5E0873CD27827517}source/houses/tem_stair1.xob"
+   LODFactors {
+    50 40 30 20 10 5 1
+   }
+  }
+  RigidBody "{65A8D95BB61C0FE8}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ Flags 1027
+ coords 2050.872 145.252 8965.67
+}

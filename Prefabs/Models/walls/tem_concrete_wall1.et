@@ -1,0 +1,60 @@
+SCR_DestructibleEntity : "{ABE1EFC16D47A8C2}Prefabs/Structures/Core/Wall_MultiPhase_Base.et" {
+ ID "51E2F0F09703F07B"
+ components {
+  MeshObject "{56DE7C8DCD0F4E0A}" {
+   Object "{52E642AD292BBC3E}source/props/tem_concrete_wall1.xob"
+   LODFactors {
+    50 40 30 20 10 1
+   }
+  }
+ }
+ MaxHealth 10000
+ "Collision multiplier" 1
+ "Kinetic multiplier" 1
+ "Fragmentation multiplier" 1
+ "Explosive multiplier" 8
+ "Incendiary multiplier" 0
+ DamageReduction 150
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5A18F297698A2425}" {
+  m_sPhaseModel "{52E642AD292BBC3E}source/props/tem_concrete_wall1.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_ParticleSpawnable "{65A8D95847344DE2}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{42E7EB23D64C6DCF}particles/wall_smoke_exp.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D95847344D09}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{A5ABAB33334E0973}Particles/Props/Dest_Prop_Concrete_Medium.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D95847344D05}" {
+    m_vOffsetPosition 0 1.5 0
+    m_Particle "{8BF4300C0BD96ED7}Particles/Props/Dest_ConcreteWall.ptc"
+    m_bDirectional 0
+   }
+  }
+ }
+ DamagePhases {
+  SCR_BaseDestructionPhase "{65A8D95847344D03}" {
+   Threshold 0.7
+   m_sPhaseModel "{52E642AD292BBC3E}source/props/tem_concrete_wall1.xob"
+  }
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{5A18F297606BF928}" {
+  m_sPhaseModel "{F0C3209A6293D400}source/props/tem_concrete_wall1_dst.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_ParticleSpawnable "{65A8D95847344D1F}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D95847344D1A}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{A5ABAB33334E0973}Particles/Props/Dest_Prop_Concrete_Medium.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D95847344D15}" {
+    m_vOffsetPosition 0 1.5 0
+    m_Particle "{8BF4300C0BD96ED7}Particles/Props/Dest_ConcreteWall.ptc"
+    m_bDirectional 0
+   }
+  }
+ }
+}

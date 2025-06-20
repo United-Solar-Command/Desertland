@@ -1,0 +1,30 @@
+SCR_DestructibleEntity : "{1C5F774E41C02543}Prefabs/Structures/Walls/Brick/BrickWall_02/BrickWall_02_base.et" {
+ ID "51E2F0F09703F07B"
+ components {
+  MeshObject "{56DE7C8DCD0F4E0A}" {
+   Object "{2368DADE3C0A3673}Assets/Structures/Walls/Brick/BrickWall_02_2m.xob"
+  }
+  NavmeshCustomLinkComponent "{5088C72B466E73FA}" {
+   LinkType NavmeshJumpLink "{5088C72B44859B28}" {
+    "Navmesh setting presets" {
+     NavmeshCustomLinkSetting "{5C90EA9654F713FE}" {
+      BeginPoint 1 0 1.5
+      EndPoint 1 0 -1.5
+     }
+    }
+   }
+  }
+  RigidBody "{56DE7C8DDE282E03}" {
+   ResponseIndex "HugeDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5A18F297698A2425}" {
+  m_aPhaseDestroySpawnObjects {
+   SCR_DebrisSpawnable "{5AD4C9DC3D568BD8}" {
+    m_vOffsetRotation 15 0 0
+   }
+  }
+ }
+}

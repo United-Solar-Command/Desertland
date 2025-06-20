@@ -1,0 +1,17 @@
+SCR_IndestructibleEnvironmentalEntity : "{B94DDC61F0B7F9D7}Prefabs/Rocks/Rock_Base.et" {
+ ID "1133272B892A2239"
+ components {
+  MeshObject "{65A8D95640C80BED}" {
+   Object "{7B75FD16DFEB260E}source/props/tem_camel1.xob"
+   LODFactors {
+    50 30 10 1
+   }
+  }
+  RigidBody "{65A8D95640C80B1D}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ Flags 1027
+ coords 6157.444 103.03 6983.705
+}

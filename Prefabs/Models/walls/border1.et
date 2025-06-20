@@ -1,0 +1,16 @@
+SCR_IndestructibleEnvironmentalEntity : "{B94DDC61F0B7F9D7}Prefabs/Rocks/Rock_Base.et" {
+ ID "1133272B892A2239"
+ components {
+  MeshObject "{65A8D95838F3C936}" {
+   Object "{A9ACBB2ABB16EDD6}source/props/tem_border1.xob"
+   CastShadow 0
+   CastFarShadow 0
+  }
+  RigidBody "{65A8D95838F3C94E}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ Flags 1027
+ coords 0.211 59.889 9239.425
+}

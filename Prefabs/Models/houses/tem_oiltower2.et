@@ -1,0 +1,61 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{233B92227CDC3AB5}source/houses/tem_oiltower.xob"
+  }
+  SCR_DestructibleBuildingComponent "{65A8D95BD3982061}" {
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     HZDefault 1
+     MaxHealth 50000
+     DamageReduction 100
+     DamageThreshold 800
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0.5
+     "Fragmentation multiplier" 0.1
+     "Explosive multiplier" 10
+    }
+   }
+   m_aEffects {
+    SCR_TimedParticle Particle_01_dust_start {
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BD398238C}" {
+      m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+      m_bAtCenter 0
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 0.2
+    }
+    SCR_TimedPrefab Prefab_Ruins_01 {
+     m_sRuinsPrefab "{375F445C919ED154}Prefabs/Models/houses/ruins/tem_oiltower_dst.et"
+    }
+    SCR_TimedParticle Particle_Dust_01_Collapse {
+     m_fSpawnTime 0.001
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BD3982386}" {
+      m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 0.45
+    }
+   }
+   m_fDelay 2
+   m_fSinkingSpeed 0.3
+   m_fSinkingSpeedGradualMultiplier 500
+   m_fRotationSpeed 8
+   m_fRotationTime 50
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{65A8D95BD3982383}" {
+    m_sSoundProject "{951A2351637B9445}Sounds/Destruction/Buildings/Destruction_Buildings_Brick_Generic.acp"
+    m_sSoundEventName "SOUND_BUILDING_DESTRUCTION_BOUNCE"
+    m_eFlags 9
+   }
+   m_CameraShakeCurve {
+    0 1 0.071 0.245 0.196 0.039 1 0
+   }
+   m_eAllowedRotations 5
+  }
+ }
+ Flags 525315
+ coords 3861.244 0 7327.23
+}

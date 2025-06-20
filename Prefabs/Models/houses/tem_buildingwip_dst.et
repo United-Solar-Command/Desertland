@@ -1,0 +1,24 @@
+SCR_IndestructibleEnvironmentalEntity {
+ ID "65A8D95113F80F28"
+ components {
+  MeshObject "{65A8D95113F80F2F}" {
+   Object "{93375EBE7EA85A9D}source/houses/tem_buildingwip_dst.xob"
+   Materials {
+    MaterialAssignClass "{65A8D95113F80F3C}" {
+     SourceMaterial "tem_debris"
+     AssignedMaterial "{DB368302F594C7CF}source/houses/data/tem_debris_wip_dst.emat"
+    }
+   }
+   LODFactors {
+    50 30 20 1
+   }
+  }
+  RigidBody "{65A8D95113F80F37}" {
+   ModelGeometry 1
+   Static 1
+  }
+  RplComponent "{65A8D95113F80F08}" {
+  }
+ }
+ coords 5779.35 116.014 7287.614
+}

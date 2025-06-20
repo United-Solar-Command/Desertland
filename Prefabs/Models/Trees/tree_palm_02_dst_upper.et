@@ -1,0 +1,9 @@
+SCR_TreeDebrisSmallEntity : "{7D66BC31C715FE4A}Prefabs/Vegetation/Tree/Dst/TreeDebris_Coniferous_Medium_base.et" {
+ ID "6308EB15DCEA74C8"
+ components {
+  MeshObject "{6308EB1589E945A6}" {
+   Object "{1EF591F9564816C4}source/Trees/dst/tree_palm_02_dst_upper.xob"
+  }
+ }
+ coords 0 0 0
+}

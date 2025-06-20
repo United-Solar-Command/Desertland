@@ -1,0 +1,17 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{B9CBFDE28CDC6CC9}source/houses/tem_watchtower1.xob"
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   Enabled 0
+  }
+  Hierarchy "{50B87EFBB2BAB285}" {
+   Enabled 0
+  }
+ }
+ Flags 1027
+ coords 8522.773 111.531 6763.689
+ angleY -87.662
+}

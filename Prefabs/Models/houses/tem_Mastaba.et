@@ -1,0 +1,17 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{7D4E2E94005D758B}source/houses/tem_Mastaba.xob"
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   Enabled 0
+  }
+  Hierarchy "{50B87EFBB2BAB285}" {
+   Enabled 0
+  }
+ }
+ Flags 525315
+ coords 2586.312 -0.454 3890.091
+ angleY -6.5
+}

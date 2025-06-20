@@ -1,0 +1,32 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{8C266BA54F7711DB}source/houses/tem_inside_pyramid1.xob"
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   Enabled 0
+  }
+  Hierarchy "{50B87EFBB2BAB285}" {
+   Enabled 0
+  }
+ }
+ Flags 525315
+ coords 2175.787 0 1410.115
+ angleY -22.417
+ {
+  EnvironmentProbeEntity : "{565470F7BA530E0D}Prefabs/Structures/Core/ProbeHouse_Base.et" {
+   ID "65A8D95A0C33E45F"
+   coords -7.979 -9.908 42.349
+   NearPlane 0.1
+   LVReflectionBrightness -6.15
+   LVDiffuseBrightness -10.55
+   DiffuseColor 0.22 0.22 0.22 1
+   TopColorEV 0.66
+   TopAngleMax -55.28
+   TopAngleMin -62.59
+   TopAngleLerp 0
+   BottomColor 0.413 0.223 0.095 1
+  }
+ }
+}

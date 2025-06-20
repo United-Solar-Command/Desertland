@@ -1,0 +1,61 @@
+SCR_DestructibleEntity : "{1C5F774E41C02543}Prefabs/Structures/Walls/Brick/BrickWall_02/BrickWall_02_base.et" {
+ ID "51E2F0F09703F07B"
+ components {
+  MeshObject "{56DE7C8DCD0F4E0A}" {
+   Object "{83B1C3549E43DF30}source/props/tem_wall_L1_pillar.xob"
+   LODFactors {
+    5 2 1
+   }
+  }
+  NavmeshCustomLinkComponent "{5088C72B466E73FA}" {
+   Enabled 0
+  }
+  RigidBody "{56DE7C8DDE282E03}" {
+   ResponseIndex "LargeDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ coords 1.735 3.129 2.99
+ scale 1.503
+ placement slopelandcontact
+ "Explosive multiplier" 5
+ DamageReduction 200
+ DamageThreshold 1
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5A18F297698A2425}" {
+  m_sPhaseModel "{83B1C3549E43DF30}source/props/tem_wall_L1_pillar.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_DebrisSpawnable "{5AD4C9DC3D568BD8}" {
+    m_vOffsetRotation 15 0 0
+    m_ModelPrefabs {
+     "{4EDA3CE75D6C1B5A}source/props/tem_brick_debris3_small.xob"
+    }
+   }
+   SCR_DebrisSpawnable "{5AD4C9DC00D5BEED}" {
+    m_vOffsetPosition 0 1.5 0
+   }
+  }
+ }
+ DamagePhases {
+  SCR_BaseDestructionPhase "{5A18F296E1A50B97}" {
+   Threshold 1
+   m_sPhaseModel "{83B1C3549E43DF30}source/props/tem_wall_L1_pillar.xob"
+   m_aPhaseDestroySpawnObjects {
+    SCR_DebrisSpawnable "{5AD4C9DC77FE5D93}" {
+     m_vOffsetPosition 0 0.2 0
+     m_vOffsetRotation 15 0 0
+     m_ModelPrefabs {
+      "{4EDA3CE75D6C1B5A}source/props/tem_brick_debris3_small.xob" "{4EDA3CE75D6C1B5A}source/props/tem_brick_debris3_small.xob"
+     }
+     m_fRandomVelocityLinear 0.5
+    }
+    SCR_DebrisSpawnable "{5AD4C9DC0A95B8F6}" {
+     m_vOffsetPosition 0 1.5 0
+    }
+   }
+  }
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{5A18F297606BF928}" {
+  m_sPhaseModel "{4EDA3CE75D6C1B5A}source/props/tem_brick_debris3_small.xob"
+ }
+}

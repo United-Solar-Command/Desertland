@@ -1,0 +1,17 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{4CC324C44B7C5A82}source/props/tem_obelisk2.xob"
+   LODFactors {
+    10 1
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ Flags 525315
+ coords 6605.438 -229.364 3059.899
+}

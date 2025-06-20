@@ -1,0 +1,17 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{540F21229ED3A348}source/props/tem_egyptstatue11.xob"
+   LODFactors {
+    20 10 5 2 1
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ coords 2132.352 166.812 1542.583
+ angleY -40.617
+}

@@ -1,0 +1,78 @@
+SCR_DestructibleEntity : "{ABE1EFC16D47A8C2}Prefabs/Structures/Core/Wall_MultiPhase_Base.et" {
+ ID "51E2F0F09703F07B"
+ components {
+  MeshObject "{56DE7C8DCD0F4E0A}" {
+   Object "{7AC5A6F06D938E45}source/props/tem_wall_L_5m.xob"
+   LODFactors {
+    50 40 30 10 1
+   }
+   CastFarShadow 0
+   PixelSizeFilter 1
+  }
+  NavmeshCustomLinkComponent "{5088C72B466E73FA}" {
+   LinkType NavmeshJumpLink "{5088C72B44859B28}" {
+    "Navmesh setting presets" {
+     NavmeshCustomLinkSetting "{5C90EA9654F713FE}" {
+      BeginPoint 2 0 1.5
+      EndPoint 2 0 -1.5
+     }
+    }
+   }
+  }
+  RigidBody "{56DE7C8DDE282E03}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ placement slopelandcontact
+ MaxHealth 10000
+ "Collision multiplier" 2
+ "Kinetic multiplier" 0.1
+ "Fragmentation multiplier" 2
+ "Explosive multiplier" 5
+ DamageReduction 200
+ DamageThreshold 1
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5A18F297698A2425}" {
+  m_sPhaseModel "{7AC5A6F06D938E45}source/props/tem_wall_L_5m.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_ParticleSpawnable "{65A8D9581F816E2E}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{42E7EB23D64C6DCF}particles/wall_smoke_exp.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D9581F816E24}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{A5ABAB33334E0973}Particles/Props/Dest_Prop_Concrete_Medium.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D9581F816E21}" {
+    m_vOffsetPosition 0 1.5 0
+    m_Particle "{8BF4300C0BD96ED7}Particles/Props/Dest_ConcreteWall.ptc"
+    m_bDirectional 0
+   }
+  }
+ }
+ DamagePhases {
+  SCR_BaseDestructionPhase "{65A8D9581F816E3C}" {
+   Threshold 0.7
+   m_sPhaseModel "{7AC5A6F06D938E45}source/props/tem_wall_L_5m.xob"
+  }
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{5A18F297606BF928}" {
+  m_sPhaseModel "{A3B36ECE08C8180A}source/props/tem_wall_L_5m_dst.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_ParticleSpawnable "{65A8D9581F816E38}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{42E7EB23D64C6DCF}particles/wall_smoke_exp.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D9581F816E3B}" {
+    m_vOffsetPosition 1 2 0
+    m_Particle "{A5ABAB33334E0973}Particles/Props/Dest_Prop_Concrete_Medium.ptc"
+   }
+   SCR_ParticleSpawnable "{65A8D9581F816E3A}" {
+    m_vOffsetPosition 0 1.5 0
+    m_Particle "{8BF4300C0BD96ED7}Particles/Props/Dest_ConcreteWall.ptc"
+    m_bDirectional 0
+   }
+  }
+ }
+ m_eMaterialSoundType BREAK_ROCK
+}

@@ -1,0 +1,12 @@
+StaticModelEntity : "{A7C1BCA45681EB56}Prefabs/Structures/Core/BuildingRuin_base.et" {
+ ID "5CAE9B8BF56E4173"
+ components {
+  MeshObject "{5CAE9B8B9983D35F}" {
+   Object "{9A79784B6E7AD5B1}source/houses/tem_tem_buildingtower1_dst.xob"
+   LODFactors {
+    50 20 1
+   }
+  }
+ }
+ coords 2272.967 162.745 2445.909
+}

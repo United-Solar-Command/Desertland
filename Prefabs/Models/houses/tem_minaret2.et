@@ -1,0 +1,165 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{65A8D95BF68B4AEA}" {
+  }
+  SCR_BellSoundComponent "{65A8D95BF68B4AFE}" {
+   Filenames {
+    "{72D601472F158C92}sounds/PA/PA_Civilian_Male_mosque.acp"
+   }
+   IncludeInactive 1
+   SoundPoints {
+    SoundPointInfo default {
+     Offset 4.1285 38.2592 -0.9191
+    }
+   }
+   m_aSoundBellTime {
+    SCR_SoundBellTime "{65A8D95BF68B4AF6}" {
+     m_fBellTime 5
+     m_iRepetitionCount 4
+    }
+    SCR_SoundBellTime "{65A8D95BF68B4AF4}" {
+     m_fBellTime 12
+     m_iRepetitionCount 4
+    }
+    SCR_SoundBellTime "{65A8D95BF68B4AF3}" {
+     m_fBellTime 17
+     m_iRepetitionCount 4
+    }
+    SCR_SoundBellTime "{65A8D95BF68B4AF2}" {
+     m_fBellTime 20
+     m_iRepetitionCount 4
+    }
+   }
+  }
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{F3BF3FCCAD3E9E62}source/houses/tem_minaret2.xob"
+   Materials {
+    MaterialAssignClass "{65A8D95BF68B5506}" {
+     SourceMaterial "Mosque_floor1"
+     AssignedMaterial "{C78357C301C8C533}source/houses/data/_NNN1.emat"
+    }
+    MaterialAssignClass "{65A8D95BF68B5503}" {
+     SourceMaterial "Mosque_floor1"
+     AssignedMaterial "{C78357C301C8C533}source/houses/data/_NNN1.emat"
+    }
+   }
+   LODFactors {
+    1 1 1 1
+   }
+  }
+  NavmeshCustomLinkComponent "{65A8D95BF68B551F}" {
+   LinkType NavmeshJumpLink "{65A8D95BF68B551C}" {
+    "Navmesh setting presets" {
+     NavmeshCustomLinkSetting "{65A8D95BF68B551B}" {
+      ProjectPresets {
+       NavmeshCustomLinkPreset "{65A8D95BF68B5518}" {
+        ProjectName "Soldiers"
+        AreaType "Walkable"
+       }
+      }
+      BeginPoint -2.831 0.296 -0.43
+      EndPoint -1.348 0.562 -0.402
+      Radius 0.2
+      QueueDelay 5
+      QueueTimeout 0
+     }
+    }
+   }
+  }
+  SCR_DestructibleBuildingComponent "{65A8D95BF68B5512}" {
+   "Additional hit zones" {
+    SCR_HitZone Default {
+     HZDefault 1
+     MaxHealth 50000
+     DamageReduction 100
+     DamageThreshold 800
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0.5
+     "Fragmentation multiplier" 0.1
+     "Explosive multiplier" 10
+    }
+   }
+   m_aEffects {
+    SCR_TimedParticle Particle_01_dust_start {
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BF68B5520}" {
+      m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+      m_bAtCenter 0
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 0.2
+    }
+    SCR_TimedSound Sound_Bricks_01_Start {
+     m_fSpawnTime 0.001
+     m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{65A8D95BF68B5539}" {
+      m_sSoundProject "{951A2351637B9445}Sounds/Destruction/Buildings/Destruction_Buildings_Brick_Generic.acp"
+      m_sSoundEventName "SOUND_BUILDING_DESTRUCTION"
+      m_eFlags 9
+     }
+    }
+    SCR_TimedSound Sound_Bricks_01_End {
+     m_fSpawnTime 0.5
+     m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{65A8D95BF68B5535}" {
+      m_sSoundProject "{951A2351637B9445}Sounds/Destruction/Buildings/Destruction_Buildings_Brick_Generic.acp"
+      m_sSoundEventName "SOUND_BUILDING_DESTRUCTION_END"
+      m_eFlags 9
+     }
+    }
+    SCR_TimedParticle Particle_Bricks_01_Start {
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BF68B5533}" {
+      m_Particle "{6D89EA548ABDDF25}Particles/Enviroment/Building_Explosion_Debris_Brick.ptc"
+      m_bAtCenter 0
+      m_bDirectional 0
+     }
+    }
+    SCR_TimedPrefab Prefab_Ruins_01 {
+     m_sRuinsPrefab "{F2B25F4AF052F249}Prefabs/Models/houses/ruins/tem_minaret2_dst.et"
+    }
+    SCR_TimedSound Sounds_Bricks_01_PreStart {
+     m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{65A8D95BF68B554C}" {
+      m_sSoundProject "{951A2351637B9445}Sounds/Destruction/Buildings/Destruction_Buildings_Brick_Generic.acp"
+      m_sSoundEventName "SOUND_BUILDING_DESTRUCTION_PRESTART"
+      m_eFlags 9
+     }
+    }
+    SCR_TimedParticle Particle_Dust_01_Collapse {
+     m_fSpawnTime 0.001
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BF68B554A}" {
+      m_Particle "{B0D882F853DE2783}Particles/Enviroment/Building_Explosion_Smoke.ptc"
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 0.45
+    }
+    SCR_TimedParticle Particle_Brick_01_Collapse {
+     m_fSpawnTime 0.001
+     m_bSnapToTerrain 1
+     m_Particle SCR_ParticleSpawnable "{65A8D95BF68B5548}" {
+      m_Particle "{6D89EA548ABDDF25}Particles/Enviroment/Building_Explosion_Debris_Brick.ptc"
+      m_bAtCenter 0
+      m_bDirectional 0
+     }
+     m_fParticlesMultiplier 2
+    }
+   }
+   m_fDelay 3
+   m_fSinkingSpeed 0.15
+   m_fSinkingSpeedGradualMultiplier 500
+   m_fRotationSpeed 5
+   m_fRotationTime 50
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{65A8D95BF68B5544}" {
+    m_sSoundProject "{951A2351637B9445}Sounds/Destruction/Buildings/Destruction_Buildings_Brick_Generic.acp"
+    m_sSoundEventName "SOUND_BUILDING_DESTRUCTION_BOUNCE"
+    m_eFlags 9
+   }
+   m_CameraShakeCurve {
+    0 1 0.071 0.245 0.196 0.039 1 0
+   }
+   m_eAllowedRotations 5
+  }
+ }
+ Flags 525315
+ coords 3861.244 0 7327.23
+}

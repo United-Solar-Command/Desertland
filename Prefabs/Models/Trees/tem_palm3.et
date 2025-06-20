@@ -1,0 +1,42 @@
+Tree : "{DC8C1B19C5E6037B}Prefabs/Vegetation/Tree/t_betula_pendula/t_betula_pendula_base.et" {
+ ID "0F2AA6B42CA78628"
+ components {
+  MeshObject "{65A8D956A271CDF9}" {
+   Object "{DD701A46C86B6994}source/Trees/tem_palm3.xob"
+   LODFactors {
+    50 20 10 5 2 1
+   }
+  }
+  RigidBody "{65A8D956A271CDE6}" {
+   ResponseIndex "Normal"
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ coords 1322.253 32.001 2161.76
+ scale 1.378
+ MaxHealth 6000
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5EA30A303A8696D4}" {
+  m_sPhaseModel "{DD701A46C86B6994}source/Trees/tem_palm3.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_PrefabSpawnable "{6308EB177862FBD3}" {
+    m_Prefabs {
+     "{69A716CA0970441E}Prefabs/Models/Trees/tree_palm_03_dst_upper.et"
+    }
+   }
+  }
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{5EA30A2E369EFD7F}" {
+  m_sPhaseModel "{A9587476E7245917}source/Trees/dst/tree_palm_03_dst.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_DebrisSpawnable "{5EA30A2D2933E380}" {
+    m_ModelPrefabs {
+    }
+    m_fLifetimeMin 600
+    m_fLifetimeMax 1200
+   }
+  }
+ }
+ SoundType Leafy
+ m_iFoliageHeight 6
+}
