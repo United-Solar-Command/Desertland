@@ -1,9 +1,0 @@
-StaticModelEntity : "{A7C1BCA45681EB56}Prefabs/Structures/Core/BuildingRuin_base.et" {
- ID "5CAE9B8BF56E4173"
- components {
-  MeshObject "{5CAE9B8B9983D35F}" {
-   Object "{9B7CBA2F9736E789}source/houses/tem_house_c_12_DST.xob"
-  }
- }
- coords 2086.766 140.772 7915.538
-}

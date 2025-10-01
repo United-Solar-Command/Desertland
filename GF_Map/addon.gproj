@@ -1,0 +1,22 @@
+GameProject {
+ ID "GFMap"
+ GUID "6682F528419B2FEF"
+ TITLE "GF_Map"
+ Dependencies {
+  "58D0FB3206B6F859" "624F15820F68F314" "64753C8D9FF3348D" "61F0D506562D9BC9" "607324BB40CC0E9D" "628EDA2ABC937159" "61110CC4F1FF9C8A"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

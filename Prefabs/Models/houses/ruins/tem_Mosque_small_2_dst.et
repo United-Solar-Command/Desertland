@@ -1,9 +1,0 @@
-StaticModelEntity : "{A7C1BCA45681EB56}Prefabs/Structures/Core/BuildingRuin_base.et" {
- ID "5CAE9B8BF56E4173"
- components {
-  MeshObject "{5CAE9B8B9983D35F}" {
-   Object "{563CEC0815D1E1CA}source/houses/tem_Mosque_small_2_dst.xob"
-  }
- }
- coords 549.354 0 7080.637
-}
